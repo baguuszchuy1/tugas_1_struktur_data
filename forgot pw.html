@@ -1,10 +1,29 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>forgot-password</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="forgotPw.css">
 </head>
 <body>
-    <h1>Forgot Password</h1>
-    <hr class="underline">
+  <div class="forgot-container">
+    <h2>Lupa Password?</h2>
+    <p>Masukkan email Anda untuk reset password.</p>
+    <input type="email" id="resetEmail" placeholder="Masukkan Email">
+    <button onclick="sendReset()">Kirim</button>
+    <a href="Login_interface.html" class="back-link">⬅ Kembali ke Login</a>
+  </div>
+
+  <script>
+    function sendReset() {
+      const email = document.getElementById("resetEmail").value;
+      if(email) {
+        alert("Link reset password telah dikirim ke " + email);
+      } else {
+        alert("Mohon masukkan email terlebih dahulu.");
+      }
+    }
+  </script>
 </body>
 </html>

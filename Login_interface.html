@@ -10,7 +10,7 @@
   <div class="login-container">
     <h1>LOGIN</h1>
     <hr class="underline">
-    <form action="homepage.html" class="login-form">
+    <form id="loginForm" class="login-form">
       <div class="input-group">
         <label for="email">
           <i class="icon-user"></i>
@@ -23,9 +23,12 @@
           <input type="password" id="password" placeholder="Password" required>
         </label>
       </div>
-      <button type="submit" class="login-button">LOGIN</button>
-      <a href="forgot pw.html" class="forgot-password">Forgot Password?</a>
+      <button type="button" class="login-button" onclick="handleLogin()">LOGIN</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
     </form>
   </div>
+
+  <!-- Panggil file JS -->
+  <script src="script.js"></script>
 </body>
 </html>
